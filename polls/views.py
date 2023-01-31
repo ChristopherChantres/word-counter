@@ -1,6 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 # Function index assigned to urls.py (index)
 def index(request):
-  return HttpResponse('<h1>World Counter Index</h1>')
+  return render(request, 'index.html')
+
+
+# Function counter returns the /counter page
+def counter(request):
+  return render(request, 'counter.html')
