@@ -7,4 +7,6 @@ def index(request):
 
 # Function counter returns the /counter page
 def counter(request):
-  return render(request, 'counter.html')
+  text = request.POST['text'] # Get the data from the textarea by GET
+  amount_of_words = len(text.split()) # Count the number of words in the text
+  return render(request, 'counter.html', {'amount': amount_of_words}) # Send the amount of words to counter.html

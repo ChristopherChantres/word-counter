@@ -10,7 +10,9 @@
     <h1>Home</h1>
     <h2>Word Counter</h2>
     <p>Input your text</p>
-    <form action="counter">
+    {% comment %} Passing csrf token for POST method {% endcomment %}
+    <form method="POST" action="counter">
+      {% csrf_token %} 
       <textarea name="text" id="" cols="100" rows="30"></textarea><br>
       <input type="submit">
     </form>
