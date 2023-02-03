@@ -1,3 +1,3 @@
-function backHome(){
+function backHome() {
   window.location.href = "/";
 }
