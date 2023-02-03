@@ -12,12 +12,16 @@ header {
 }
 
 h1 {
-  color: whitesmoke;
   background-color: #0d3446;
   width: 100%;
   text-align: center;
   margin: 0px;
-  padding: 15px;
+  padding: 15px 0px;
+}
+
+h1 a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .p1-input {
@@ -71,6 +75,7 @@ form input {
   font-size: 40px;
   margin-top: 10px;
   cursor: pointer;
+  transition: .2s all ease-in-out;
 }
 
 form input:hover {
@@ -80,4 +85,22 @@ form input:hover {
 form input:active {
   background-color: rgb(94, 255, 0);
   border: 15px solid rgb(15, 129, 223);
+}
+
+footer {
+  background-color: #0d3446;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+footer .p-author a {
+  color: whitesmoke;
+  text-decoration: underline;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 18px;
 }
