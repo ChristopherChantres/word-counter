@@ -14,27 +14,30 @@
       <h1>Counter</h1>
     </header>
     <div class="content">
-      <h2>Data Obtained</h2>
-      <textarea disabled>{{ text }}</textarea>
-      <table>
-        <tr>
-          <th>Characteristic</th>
-          <th>Amount</th>
-        </tr>
-        <tr>
-          <td>Total words</td>
-          <td>{{ amount }}</td>
-        </tr>
-        <tr>
-          <td>Start with vowel</td>
-          <td>{{ vowel_words }}</td>
-         </tr>
-        <tr>
-          <td>Start with consonant</td>
-          <td>{{ consonant_words }}</td>
-         </tr>
-      </table>
-      <button type="button" class="button-count-again" onclick="backHome()">Count Again!</button>
+      <div class="main-content">
+        <h2>Data Obtained</h2>
+        <textarea disabled>{{ text }}</textarea>
+        <table>
+          <tr>
+            <th>Characteristic</th>
+            <th>Amount</th>
+          </tr>
+          <tr>
+            <td>Total words</td>
+            <td>{{ amount }}</td>
+          </tr>
+          <tr>
+            <td>Start with vowel</td>
+            <td>{{ vowel_words }}</td>
+           </tr>
+          <tr>
+            <td>Start with consonant</td>
+            <td>{{ consonant_words }}</td>
+           </tr>
+        </table>
+        <button type="button" class="button-count-again" onclick="backHome()">Count Again!</button>
+      </div>
+      
     </div>
 
   </body>

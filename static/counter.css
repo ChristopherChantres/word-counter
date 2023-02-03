@@ -27,6 +27,15 @@ h1 {
   align-items: center;
 }
 
+.main-content {
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .content textarea {
   color: rgb(131, 131, 131);
   width: 90%;
