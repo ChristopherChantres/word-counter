@@ -5,9 +5,9 @@
   <br>
 </h1>
 
-<h4 align="center">A Web App Develped With<a href="https://www.djangoproject.com/" target="_blank">Django</a>.</h4>
+<h4 align="center">A Web App Develped With <a href="https://www.djangoproject.com/" target="_blank">Django</a>.</h4>
 
-<!-- ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif) -->
+[Project Screenshot](https://i.postimg.cc/TwcW7wv9/Screen-Shot-2023-02-02-at-21-25-39.png)
 
 ## Key Features
 
