@@ -36,6 +36,15 @@ h1 a {
   align-items: center;
 }
 
+.main-content {
+  width: 95%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 form {
   background-color: rgb(36, 143, 154);;
   display: flex;

@@ -15,13 +15,15 @@
     </header>
 
     <div class="content">
-      <p class="p1-input">Input your text:</p>
-      {% comment %} Passing csrf token for POST method {% endcomment %}
-      <form method="POST" action="counter">
-        {% csrf_token %} 
-        <textarea name="text" id="" placeholder="Enter your text here! :)"></textarea>
-        <input type="submit" value="Count!">
-      </form>
+      <div class="main-content">
+        <p class="p1-input">Input your text:</p>
+        {% comment %} Passing csrf token for POST method {% endcomment %}
+        <form method="POST" action="counter">
+          {% csrf_token %} 
+          <textarea name="text" id="" placeholder="Enter your text here! :)"></textarea>
+          <input type="submit" value="Count!">
+        </form>
+      </div>
     </div>
 
     <footer>
