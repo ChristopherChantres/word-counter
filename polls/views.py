@@ -25,4 +25,4 @@ def counter(request):
       print(f'"{word}" VOWEL')
       vowel_box.append(checking_first_word) # Appending the vowel to the vowel_box
 
-  return render(request, 'counter.html', {'amount': amount_of_words, 'vowel_words': len(vowel_box), 'consonant_words': len(consonant_box)}) # Send the amount of words, vowel_words and consonant_words to counter.html
+  return render(request, 'counter.html', {'text': text, 'amount': amount_of_words, 'vowel_words': len(vowel_box), 'consonant_words': len(consonant_box)}) # Send the amount of words, vowel_words and consonant_words to counter.html

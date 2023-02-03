@@ -1,15 +1,41 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'counter.css' %}">
+    <script src="{% static 'counter.js' %}"></script>
     <title>Total words</title>
   </head>
   <body>
-    <h1>Counter Page</h1>
-    <p>The amount of words is: {{ amount }}</p>
-    <p>There are {{ vowel_words }} that start with vowel</p>
-    <p>There are {{ consonant_words }} that start with consonant</p>
+    <header>
+      <h1>Counter</h1>
+    </header>
+    <div class="content">
+      <h2>Data Obtained</h2>
+      <textarea>{{ text }}</textarea>
+      <table>
+        <tr>
+          <th>Characteristic</th>
+          <th>Amount</th>
+        </tr>
+        <tr>
+          <td>Total words</td>
+          <td>{{ amount }}</td>
+        </tr>
+        <tr>
+          <td>Start with vowel</td>
+          <td>{{ vowel_words }}</td>
+         </tr>
+        <tr>
+          <td>Start with consonant</td>
+          <td>{{ consonant_words }}</td>
+         </tr>
+      </table>
+      <button type="button" class="button-count-again" onclick="backHome()">Count Again</button>
+    </div>
+
   </body>
 </html>
