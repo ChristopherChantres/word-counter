@@ -1,30 +1,64 @@
-
-<h1 align="center">
-  <br>
-  Pulga Word Counter
-  <br>
-</h1>
-
-<h4 align="center">A Web App Develped With <a href="https://www.djangoproject.com/" target="_blank">Django</a>.</h4>
-
-[Project Screenshot](https://i.postimg.cc/TwcW7wv9/Screen-Shot-2023-02-02-at-21-25-39.png)
-
-## Key Features
-
-* Calculates how many words your text has.
-
-## You may also like...
-
-- [Where is my name from?](https://christopherchantres.github.io/api.names.js/) - A website that gets data from a webpage with AI (which calculates where the names come from) and shows it on this website.
-- [VIN](https://vin.cuerpode.repl.co/index.html) - A breaking news website made for the Model United Nation ONUSEMS
-
-## License
-
-MIT
-
+# Pulga Word Counter
 ---
 
-> [christopherchantres.github.io](https://christopherchantres.github.io/) &nbsp;&middot;&nbsp;
-> GitHub [@ChristopherChantres](https://github.com/ChristopherChantres) &nbsp;&middot;&nbsp;
-> Twitter [@ChrisChantres](https://twitter.com/ChrisChantres)
+https://github.com/user-attachments/assets/15e9eff2-ece8-41ea-a0ce-d1939f01d150
 
+---
+## Overview
+
+Pulga Word Counter is a simple Django-based web application that takes an input text from the user and provides a detailed analysis of the word count, including:
+
+  - The total number of words.
+  - The count of words starting with a vowel.
+  - The count of words starting with a consonant.
+
+The application includes two main views:
+
+    index view for users to input their text.
+    counter view to display the results after submission.
+
+## Features
+
+    Text Analysis: Counts the total number of words in the input text.
+    Vowel & Consonant Classification: Classifies words based on whether they start with a vowel or consonant.
+    Easy-to-use Interface: Users can enter text and view analysis results instantly by clicking the "Count!" button.
+
+## How It Works
+
+    The user enters the text in the input box and clicks on the Count! button.
+    The app takes the input and calculates:
+        The total number of words.
+        The number of words starting with a vowel.
+        The number of words starting with a consonant.
+    The results are displayed on the counter.html page.
+
+## Installation
+
+    Python 3.6 or higher
+    Django 4.0 or higher
+
+Clone the Repository:
+
+```bash
+git clone <repository_url>
+cd <repository_folder>
+```
+
+## Install Dependencies
+
+Install Django via pip:
+
+```bash
+pip install django
+```
+
+Run the Development Server:
+
+```bash
+python manage.py runserver
+```
+
+Access the Application. Open your web browser and go to:
+```bash
+http://127.0.0.1:8000/
+```
